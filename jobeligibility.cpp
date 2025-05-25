@@ -7,13 +7,13 @@ int main() {
     if (age < 18) {
         cout << "Not eligible for job";
     }
-    else if (age <= 54 && age >= 18) {
+    else if (age <= 57) {
         cout << "eligible for job";
+        if (age >= 55) {
+            cout << ", but retirement soon";
+        }
     }
-    else if (age >= 55 && age <= 57) {
-        cout << "eligible for job, but retirement soon";
-    }
-    if (age > 57) {
+    else {
         cout << "retirement time";
     }
     return 0;
